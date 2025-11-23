@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #222;
+    background: #f5f5f5;
+}
+
+/* Header - Flexbox */
+.header {
+    width: 100%;
+    padding: 1rem 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e30606;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.nav a {
+    color: #fff;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #ff4d4d;
+}
+
+/* Hero - Flexbox */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10%;
+    gap: 2rem;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+}
+
+.name {
+    color: #ff4d4d;
+    animation: colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% { color: #ff4d4d; }
+    100% { color: #0099ff; }
+}
+
+.role {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.hero-img img {
+    width: 20vw;
+    min-width: 200px;
+    border-radius: 50%;
+}
+
+/* Section Titles */
+.section-title {
+
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Skills & Projects Grid */
+.skills-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 10%;
+}
+
+.card {
+    background: rgb(231, 12, 12);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: #ffdddd;
+}
+
+/* Contact Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 60%;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    padding: 0.8rem;
+    border: none;
+    background: #ff4d4d;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background: #f10e0e;
+    color: #ede9e9;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
+
+
