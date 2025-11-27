@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+                url("https://images.unsplash.com/photo-1501785888041-af3ef285b470") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.cta-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #ffb100;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* SECTION BASIC */
+.section {
+    padding: 50px 50px;
+    background: #f6fafb;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+/* DESTINATIONS GRID */
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.card p {
+    padding: 0 10px 10px;
+    font-size: 14px;
+}
+
+/* PACKAGES */
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.package-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.package-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.package-card .price {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ff7b00;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links a {
+        margin: 10px;
+    }
+}
